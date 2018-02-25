@@ -116,7 +116,7 @@ public:
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
         vAlertPubKey = ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9");
-        nDefaultPort = 9333;
+        nDefaultPort = 5333;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 840000;
         nEnforceBlockUpgradeMajority = 750;
@@ -156,12 +156,12 @@ public:
         assert(hashGenesisBlock == uint256("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2"));
         assert(genesis.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
 
-        vSeeds.push_back(CDNSSeedData("litecointools.com", "dnsseed.litecointools.com"));
-        vSeeds.push_back(CDNSSeedData("litecoinpool.org", "dnsseed.litecoinpool.org"));
-        vSeeds.push_back(CDNSSeedData("xurious.com", "dnsseed.ltc.xurious.com"));
-        vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
-        vSeeds.push_back(CDNSSeedData("weminemnc.com", "dnsseed.weminemnc.com"));
-        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.litecoin.loshan.co.uk"));
+//        vSeeds.push_back(CDNSSeedData("litecointools.com", "dnsseed.litecointools.com"));
+//        vSeeds.push_back(CDNSSeedData("litecoinpool.org", "dnsseed.litecoinpool.org"));
+//        vSeeds.push_back(CDNSSeedData("xurious.com", "dnsseed.ltc.xurious.com"));
+//        vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
+//        vSeeds.push_back(CDNSSeedData("weminemnc.com", "dnsseed.weminemnc.com"));
+//        vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.litecoin.loshan.co.uk"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
